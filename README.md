@@ -1,5 +1,53 @@
 # TutsTuts
 
+<div align="center">
+Projeto FullStack apresentado ao curso de Tecnologia
+em Análise e Desenvolvimento de Sistemas
+do Instituto Federal de Educação, Ciência e
+Tecnologia de São Paulo, desenvolvido por:<br>
+Enzo Martinelli<br>
+Willie Oliveira<br>
+Camily de Melo<br>
+Fernanda Agustoni<br>
+<hr>
+Organize Eventos e Explore Festividades com esta
+Aplicação.
+<hr>
+</div>
+
+Em decorrência das ininterruptas inovações propelidas pelo avanço
+tecnológico e da indispensabilidade de festividades locais para o entretenimento
+comunitário, cresce a contínua demanda por meios digitais que facilitem e
+potencializem a interação entre organizadores de eventos, plataformas comerciais e
+o público em geral. Proporcionando praticidade e agilidade na organização de festas
+e eventos, permitindo a divulgação eficiente e a interação direta entre os
+participantes e os responsáveis, a aplicação proposta, TutsTuts, busca ser a
+ferramenta que satisfaça tal demanda. O objetivo geral do projeto é desenvolver um
+ambiente virtual que proporcione uma experiência acessível e divertida na organização
+de eventos e exploração de festividades locais para os usuários. Por meio da
+aplicação, eles poderão interagir com os organizadores dos eventos, encontrar
+pessoas com interesses em comum e desfruir de recursos como compras de ingressos
+e itens exclusivos. Com isso, o sistema visa fomentar a divulgação dos eventos,
+alcançando um público maior e contribuindo para o fortalecimento do setor de
+festividades e turismo.
+
+<hr>
+
+- Crie um usuario comum ou usuario empresa.
+
+- Registre seus eventos com imagens.
+
+- Bate-papo com a empresa responsável pelo evento por CHAT usando WebSockets.
+
+- Atualize seu perfil com adicionando uma imagem.
+
+- Curta eventos baseado no seu interesse!
+  - (Maior preferencia de filtragem de eventos pela categoria que o usuario tem interesse).
+<br>
+E muito mais!
+
+<hr>
+
 <!--
   BEFORE UPDATING THIS FILE, READ THIS.
 
@@ -11,6 +59,15 @@
 
   Any changes to README.md directly will result in a failure on CI.
 -->
+
+## 🔨 Tecnologias utilizadas:
+
+<br>
+<div align="center">
+  <img src="https://github.com/EnzowMb/TutsTuts/assets/89809584/646be6a5-9507-40a2-97c8-6ea8dd13e1c4" width="80px"><br>Angular CLI<br><br>
+  <img src="https://github.com/EnzowMb/EnzowMb/assets/89809584/4f3d4387-46e5-4b82-ac9a-13848cf7ca41" width="80px"><br>Spring Boot<br><br>
+  <img src="https://github.com/EnzowMb/Kaolin-All-Musical-Instruments/assets/89809584/7f2777b4-d124-49bc-8e82-9171ae02076d" width="80px"><br>Typescript<br><br>
+</div>
 
 <h1 style="text-align: center">Angular CLI - The CLI tool for Angular.</h1>
 
@@ -48,27 +105,92 @@
 
 <hr>
 
+Banco de dados:
 
+```bash
+MySQL
+```
+[![My Skills](https://skillicons.dev/icons?i=mysql)](https://skillicons.dev)
 
-## Desenvolvimento (Front-End)
+Dependências Frontend:
 
+```bash
+JWT
+Cloudinary
+Primeng
+Karma
+```
 
-### Preparações
+Dependências Backend:
 
+```bash
+Web Sockets
+Spring Data JPA
+MySQL Connector
+Flyway
+Bean Validation
+Apache Commons
+Spring Security
+AuthO2
+JWT
+```
+
+## 🤖 Pré-requisitos
+
+Requisitos para o software e outras ferramentas para desenvolver e testar.
+
+- NodeJS
+- Postman
+- MySQL
+- Spring Boot/Java
+
+[![My Skills](https://skillicons.dev/icons?i=postman,mysql,java,nodejs)](https://skillicons.dev)
+
+## 🎲 Instalando e executando
+
+### Desenvolvimento (Front-End)
+
+```bash
 - Instale o [Node.js] que com ele vem incluso o [Node Package Manager][npm]
 
-### Iniciando projeto (Front-End)
+```
 
-npm install
+#### Iniciando projeto (Front-End)
 
+```bash
+
+Abra o terminal dentro da pasta tutstuts-ui:
 cd tutstuts-ui
 
-ng serve
+execute npm install
 
+execute ng serve ou npm start
 
-## Desenvolvimento (Back-End)
+```
 
-Execultar o arquivo Java principal
+### Desenvolvimento (Back-End)
 
+```bash
 
+Abra a pasta src;
+Abra a pasta resources;
+Modifique application.properties:
+spring.datasource.url=jdbc:mysql://[SEU LOCALHOST]/tutstuts?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+spring.datasource.username=[SEU USERNAME MYSQL]
+spring.datasource.password=[SUA SENHA]
 
+Salve;
+
+Execute o arquivo principal como aplicação spring boot:
+TutsTutsApplication.java
+
+Caso algo der errado verifique seu application.properties na conexão com o banco.
+
+```
+
+## 👥 Autores
+
+- **Enzo Martinelli**
+- **Camily de Melo**
+- **Fernanda Agustoni**
+- **Willie Oliveira**
