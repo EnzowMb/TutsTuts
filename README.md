@@ -1,6 +1,9 @@
 # TutsTuts
 
 <div align="center">
+
+![Tuts (1)](https://github.com/EnzowMb/TutsTuts/assets/89809584/de44f6dc-bb13-4218-8fb3-578575b38701)
+  
 Projeto FullStack apresentado ao curso de Tecnologia
 em Análise e Desenvolvimento de Sistemas
 do Instituto Federal de Educação, Ciência e
@@ -47,6 +50,16 @@ festividades e turismo.
 E muito mais!
 
 <hr>
+
+## Avaliações do sistema pelos usuários:
+
+![Comentarios 1](https://github.com/EnzowMb/TutsTuts/assets/89809584/5a00ec1c-fa78-499f-9f03-021a2b88e314)
+
+![Comentarios 2](https://github.com/EnzowMb/TutsTuts/assets/89809584/594d0134-b909-430a-8ac5-7d7f06fb096b)
+
+## Protótipo no Figma:
+
+![Prototipo no Figma](https://github.com/EnzowMb/TutsTuts/assets/89809584/98d65cad-57a7-4776-bef7-e3d87a565b0f)
 
 <!--
   BEFORE UPDATING THIS FILE, READ THIS.
@@ -187,6 +200,9 @@ TutsTutsApplication.java
 Caso algo der errado verifique seu application.properties na conexão com o banco.
 
 ```
+
+### Roteiro de Teste: [Documento](https://github.com/EnzowMb/TutsTuts/files/13639426/Roteiro.de.teste.docx)
+
 
 ## 👥 Autores
 
