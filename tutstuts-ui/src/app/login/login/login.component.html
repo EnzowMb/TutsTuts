@@ -1,0 +1,55 @@
+<p-toast></p-toast>
+<div class="main-login">
+  <div class="container">
+    <!-- Formulário -->
+    <div class="image">
+      <!-- Image -->
+      <img class="login-image" src="https://imgur.com/MfHVuqH.png">
+    </div>
+    <div class="login">
+        <h2>Login</h2><br><br>
+        <div class="p-inputgroup">
+        <span class="p-float-label">
+          <input
+            type="text"
+            pInputText
+            [(ngModel)]="login.email"
+            placeholder="Email"
+            id="email"
+            tabindex="1"
+            class="custom-input"
+          />
+          <label for="email"><i class="pi pi-envelope"></i>&nbsp; &nbsp;Email</label>
+        </span>
+      </div>
+      <p></p>
+      <div class="p-inputgroup">
+
+        <span class="p-float-label">
+          <input
+            #passwordInput
+            type="{{ showPassword ? 'text' : 'password' }}"
+            pInputText
+            [(ngModel)]="login.senha"
+            placeholder="Senha"
+            id="password"
+            class="custom-input"
+            tabindex="2"
+          />
+          <i
+            class="pi"
+            [ngClass]="{'pi-eye': !showPassword, 'pi-eye-slash': showPassword}"
+            (click)="togglePasswordVisibility(passwordInput)"
+            style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;"
+          ></i>
+          <label for="senha"><i class="iconKey pi pi-key"></i>&nbsp; &nbsp;Senha</label>
+        </span>
+      </div>
+      <p></p>
+      <div class="button-group"> <!-- Nova div para conter os botões -->
+        <button class="botaoEnviar" pButton pRipple label="Entrar" (click)="realizarLogin()"></button>
+        <button [routerLink]="['/opcoes']" class="botaoEnviar" pButton pRipple label="Registrar"></button>
+      </div>
+    </div>
+  </div>
+</div>
